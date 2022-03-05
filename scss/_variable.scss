@@ -1,0 +1,149 @@
+$primary-color:#9356dc;
+$secondary-color:#ff79da;
+$tertiary-color:#99e2d0;
+$bg-color: #c6c6c6;
+$txt_color: #ffffff;
+
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// to put items in the center and direction in row or column
+@mixin flexCenter($direction)
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin header-logo
+{
+    display: block;
+    margin: .5rem;
+    text-align: center;
+    img
+    {
+      height: 23px;
+    }
+}
+@mixin btn__lin--gradient
+{
+  background: linear-gradient( $secondary-color, $primary-color); /* create linear-gradient into background [ linear-gradient(top-color, bottom-color)] */
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+@mixin border-bottom
+{
+  width: 40px;
+  border-bottom: 3px solid $tertiary-color;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@mixin img
+{
+  width: 90vw;
+  height: 18vh;
+  border-radius: 20px 20px 0px 0px;
+}    
+// Media queryies
+@mixin tablet
+{
+  @media screen and (min-width:513px) {
+    @content;
+  }
+}
+@mixin labtop
+{
+  @media screen and (min-width:1024px) {
+    @content;
+  }
+}
+
+@mixin mobole
+{
+  @media screen and (min-width: 320px)
+  {
+    @content;
+  }  
+}
+
+/*setup animation sections*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1440deg)
+  }
+}
+
+@keyframes backspin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1440deg)
+  }
+}
+@keyframes slide-out {
+  0% {
+    width: 20%;
+    color: red;
+    
+  }
+  75% {
+    width: 50%;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    width: 50%;
+    color: blue;
+  }
+  75% {
+    width: 20%;
+  }
+  100% {
+    
+    color: red;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  75%{
+    opacity: .5;
+    z-index: 30;
+  }
+  
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes dishes 
+{
+  0%
+  {
+    transform: translate(-999px);
+  }
+  100%
+  {
+    transform: translate(0);
+  }
+}

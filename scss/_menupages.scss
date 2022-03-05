@@ -1,0 +1,148 @@
+/* All Sections of Each Restaurant */
+.menu
+{
+  @include flexCenter(column);
+  img
+  {
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .menuBoard
+  { 
+    width: 100vw;
+    background-color: lighten($bg-color, 10);
+    border-radius: 3rem 3rem 0px 0px ;
+    padding: 2rem 1rem;
+    z-index: 1;
+    margin-top: -3rem;
+
+    &__name
+    {
+      position: relative;
+      margin-bottom: 5rem;
+      h1
+      {
+        position: absolute;
+        top: 1rem;
+        left: 0rem;
+        font-family: Shrikhand;
+        font-style: italic;
+      }
+      i
+      {
+        position: absolute;
+        top: 1rem;
+      }
+    }
+    .dishes
+    {
+      margin: auto; 
+      
+      &__partial
+      {
+        @include border-bottom;
+        white-space: nowrap;
+      }
+      &__wrap
+      {
+        display: flex;
+        flex-direction: column;
+        
+        .foodCard
+        {         
+          background-color: $txt_color;  
+          margin-bottom: 1rem;
+          width: 100%;
+          border-radius: 1rem;
+          position: relative;
+          display: flex;
+          overflow: hidden;
+          &__text
+          {
+            margin-left: 1rem;
+            flex: none;
+            width: 75%;
+            transition: width 1000ms ease-in;
+          h4
+          {
+            margin: 1rem 0 0.5rem;
+          }
+            .foodCard__description
+            {
+              margin: 0.5rem 0 1rem;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+          &__price
+          {
+            width: 25%;
+            flex: none;
+            display: flex;
+            align-items: end;
+            padding-bottom: 1rem;
+          }
+          &__checkmark
+          {
+            background-color: $tertiary-color;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
+            .checkmarks
+            {
+              font-size: 1.5rem;
+              color: #fff;
+              margin-left: -1rem;
+              animation: backspin 1500ms linear forwards;
+            }
+          }
+
+        }
+        .foodCard:hover
+        {
+          .foodCard__text
+          {
+            width: 50%;
+            transition: width 1000ms ease-in;
+          }
+          .foodCard__description
+          {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+          .checkmarks
+          {
+            animation: spin 1500ms linear forwards;
+          }
+
+        }  
+      }
+
+    }
+    .dishes__anim--1
+    {
+        animation: dishes 1850ms ;
+    }
+    .dishes__anim--2
+    {
+        animation: dishes 3000ms ;
+    }
+    button
+    {
+      font-size: 16px;
+      width: 50%;
+      @include btn__lin--gradient;
+      position: relative;
+      bottom: 25%;
+      left: 25%;
+      margin-top: 2rem;
+    }  
+  }
+  
+}
