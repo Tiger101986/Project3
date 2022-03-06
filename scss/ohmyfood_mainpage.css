@@ -351,6 +351,11 @@
           animation: dishes 1500ms;
 }
 
+.menu .menuBoard .dishes__anim--4 {
+  -webkit-animation: dishes 1750ms;
+          animation: dishes 1750ms;
+}
+
 .menu .menuBoard button {
   font-size: 16px;
   width: 50%;
