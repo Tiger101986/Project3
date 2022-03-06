@@ -127,11 +127,15 @@
     }
     .dishes__anim--1
     {
-        animation: dishes 1850ms ;
+        animation: dishes 1000ms ;
     }
     .dishes__anim--2
     {
-        animation: dishes 3000ms ;
+        animation: dishes 1250ms ;
+    }
+    .dishes__anim--3
+    {
+        animation: dishes 1500ms ;
     }
     button
     {

@@ -1,0 +1,24 @@
+/* @include tablet
+{
+    body
+    {
+        .restaurants
+        {
+            background-color:  white;
+
+            &__card--wrap
+            {   
+                width: 100%;  
+                display:flex;
+                flex-flow:row wrap;
+                justify-content: space-between;
+            } 
+            &__card
+            {
+                width: 25%;
+            }
+            
+        }      
+    }
+    
+} */

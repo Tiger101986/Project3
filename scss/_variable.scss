@@ -57,13 +57,13 @@ $txt_color: #ffffff;
 // Media queryies
 @mixin tablet
 {
-  @media screen and (min-width:513px) {
+  @media screen and (min-width:561px) {
     @content;
   }
 }
 @mixin labtop
 {
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width:990px) {
     @content;
   }
 }
@@ -140,10 +140,20 @@ $txt_color: #ffffff;
 {
   0%
   {
-    transform: translate(-999px);
+    margin-top: 20px;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50%
+  {
+    margin-top: 10px;
+    transform: translateY(5px);
+    opacity: 0;
   }
   100%
   {
-    transform: translate(0);
+    margin-top: 0px;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

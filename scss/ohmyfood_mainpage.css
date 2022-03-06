@@ -133,23 +133,43 @@
 
 @-webkit-keyframes dishes {
   0% {
-    -webkit-transform: translate(-999px);
-            transform: translate(-999px);
+    margin-top: 20px;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    margin-top: 10px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    margin-top: 0px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
 @keyframes dishes {
   0% {
-    -webkit-transform: translate(-999px);
-            transform: translate(-999px);
+    margin-top: 20px;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    margin-top: 10px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    margin-top: 0px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -317,13 +337,18 @@
 }
 
 .menu .menuBoard .dishes__anim--1 {
-  -webkit-animation: dishes 1850ms;
-          animation: dishes 1850ms;
+  -webkit-animation: dishes 1000ms;
+          animation: dishes 1000ms;
 }
 
 .menu .menuBoard .dishes__anim--2 {
-  -webkit-animation: dishes 3000ms;
-          animation: dishes 3000ms;
+  -webkit-animation: dishes 1250ms;
+          animation: dishes 1250ms;
+}
+
+.menu .menuBoard .dishes__anim--3 {
+  -webkit-animation: dishes 1500ms;
+          animation: dishes 1500ms;
 }
 
 .menu .menuBoard button {
@@ -343,18 +368,30 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 513px) {
-  body {
-    margin: 0 5rem;
-  }
-  body .aside {
-    background-color: white;
-  }
-  body .restaurants {
-    background-color: white;
-  }
-}
+/* @include tablet
+{
+    body
+    {
+        .restaurants
+        {
+            background-color:  white;
 
+            &__card--wrap
+            {   
+                width: 100%;  
+                display:flex;
+                flex-flow:row wrap;
+                justify-content: space-between;
+            } 
+            &__card
+            {
+                width: 25%;
+            }
+            
+        }      
+    }
+    
+} */
 /* Header Section */
 /* @include mobole */
 body {
@@ -484,7 +521,7 @@ header a {
           box-shadow: 5px 5px 5px #c6c6c6;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .aside button {
     width: 20%;
   }
@@ -524,7 +561,7 @@ header a {
           flex-direction: column;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .option__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,7 +606,7 @@ header a {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 990px) {
   .option__wrap button {
     width: 30%;
   }
@@ -647,7 +684,7 @@ header a {
 
 .restaurants__card img {
   width: 100%;
-  height: 18vh;
+  height: 150px;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -685,6 +722,7 @@ header a {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: opacity 3000ms;
   transition: opacity 3000ms;
