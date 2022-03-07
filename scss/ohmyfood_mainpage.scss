@@ -316,14 +316,13 @@ header
   
 
 /* Footer section */
-.footer
+footer
 {
   background-color: #000000;
   padding: 1rem;
   line-height: 1.5;
-  
 
-  &__logo
+  .footer__logo
   {
     display: block;
     font-family: Shrikhand;
