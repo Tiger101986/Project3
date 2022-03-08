@@ -57,7 +57,7 @@ $txt_color: #ffffff;
 // Media queryies
 @mixin tablet
 {
-  @media screen and (min-width:561px) {
+  @media screen and (min-width:521px) {
     @content;
   }
 }

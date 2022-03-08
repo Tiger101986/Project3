@@ -110,7 +110,7 @@ header
   }
   button
   {
-    width: 59%;
+    width: 200px;
     @include btn__lin--gradient;
     cursor: pointer;  
     box-shadow: 5px 5px 5px $bg-color;
@@ -134,16 +134,7 @@ header
   }
   &__wrap
   {
-    @include flexCenter(column);
-    @include labtop
-    {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-right: 13rem;
-
-    }
-    
+    /* @include flexCenter(column); */
     :hover
       {
         background-color: lighten($primary-color, 32);
