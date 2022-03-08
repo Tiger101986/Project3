@@ -9,21 +9,54 @@
             
             .option__btn--tbl-1
             {
-                width: 235px;
+                width: 45%;
                 align-items: center;
                 border-radius: 1rem;
                 margin-right: 2rem;
             }
             .option__btn--tbl-2
             {
-                width: 235px;
+                width: 45%;
                 align-items: center;
                 border-radius: 1rem;
                 margin-right: 2rem;
             }
             .option__btn--tbl-3
             {
-                width: 325px;
+                width: 45%;
+                align-items: center;
+                border-radius: 1rem;
+            }
+        }
+    }
+    
+}
+@include labtop
+{
+    .option
+    {
+        &__wrap
+        {
+            display: flex;
+            flex-flow: row wrap;
+            
+            .option__btn--tbl-1
+            {
+                width: 25%;
+                align-items: center;
+                border-radius: 1rem;
+                margin-right: 2rem;
+            }
+            .option__btn--tbl-2
+            {
+                width: 25%;
+                align-items: center;
+                border-radius: 1rem;
+                margin-right: 2rem;
+            }
+            .option__btn--tbl-3
+            {
+                width: 35%;
                 align-items: center;
                 border-radius: 1rem;
             }

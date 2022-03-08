@@ -114,10 +114,6 @@ header
     @include btn__lin--gradient;
     cursor: pointer;  
     box-shadow: 5px 5px 5px $bg-color;
-    @include labtop
-    {
-      width: 20%;
-    }
   }
 } 
 

@@ -373,7 +373,7 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 521px) {
+@media screen and (min-width: 689px) {
   .option__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,7 +384,7 @@
             flex-flow: row wrap;
   }
   .option__wrap .option__btn--tbl-1 {
-    width: 235px;
+    width: 45%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -392,7 +392,7 @@
     margin-right: 2rem;
   }
   .option__wrap .option__btn--tbl-2 {
-    width: 235px;
+    width: 45%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -400,7 +400,42 @@
     margin-right: 2rem;
   }
   .option__wrap .option__btn--tbl-3 {
-    width: 325px;
+    width: 45%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .option__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .option__wrap .option__btn--tbl-1 {
+    width: 25%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+  .option__wrap .option__btn--tbl-2 {
+    width: 25%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+  .option__wrap .option__btn--tbl-3 {
+    width: 35%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -535,12 +570,6 @@ header a {
   cursor: pointer;
   -webkit-box-shadow: 5px 5px 5px #c6c6c6;
           box-shadow: 5px 5px 5px #c6c6c6;
-}
-
-@media screen and (min-width: 990px) {
-  .aside button {
-    width: 20%;
-  }
 }
 
 .option {
