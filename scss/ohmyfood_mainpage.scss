@@ -132,17 +132,17 @@ header
   {
     /* @include flexCenter(column); */
     :hover
+    {
+      background-color: lighten($primary-color, 32);
+      box-shadow: 5px 5px 5px $bg-color;
+      z-index: 3;
+      opacity: 3;
+      i 
       {
-        background-color: lighten($primary-color, 32);
-        box-shadow: 5px 5px 5px $bg-color;
-        z-index: 3;
-        opacity: 3;
-        i 
-        {
-          color: $primary-color; 
-        }
-
+        color: $primary-color; 
       }
+
+    }
 
     button
     {
@@ -156,12 +156,7 @@ header
       border: none;
       border-radius: 1rem;
       cursor: pointer;
-      @include labtop
-      {
-        width: 30%;
-        
-      }
-      p
+      .btn__num
       {
         display: inline;
         width: 24px;
@@ -177,12 +172,6 @@ header
         font-size: 20px;
         color:#808080;
         margin-right: 19px;
-        
-        /* :hover
-        {
-          color: $primary-color;
-          
-        } */
       }
       span
       {
@@ -204,12 +193,11 @@ header
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  &__cards--wrap
+  /* &__card--wrap
   { 
-    width: 90%;     
+    width: 100%;     
     @include flexCenter(column);
-    
-  }  
+  }   */
   &__card
   {
     background-color: #ffffff;
@@ -298,10 +286,6 @@ header
     }
   }
 }
-
-  
-  
-
 /* Footer section */
 footer
 {
@@ -322,7 +306,8 @@ footer
     }
   } 
   
-  a{
+  a
+  {
     display: block;
     text-decoration: none;
     color:#ffffff;

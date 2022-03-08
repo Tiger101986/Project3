@@ -94,33 +94,8 @@ $txt_color: #ffffff;
     transform: rotate(-1440deg)
   }
 }
-@keyframes slide-out {
-  0% {
-    width: 20%;
-    color: red;
-    
-  }
-  75% {
-    width: 50%;
-  }
-  100% {
-    color: blue;
-  }
-}
 
-@keyframes slide-in {
-  0% {
-    width: 50%;
-    color: blue;
-  }
-  75% {
-    width: 20%;
-  }
-  100% {
-    
-    color: red;
-  }
-}
+
 @keyframes disappear {
   0% {
     opacity: 1;
