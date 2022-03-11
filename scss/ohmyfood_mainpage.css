@@ -322,6 +322,7 @@
 }
 
 @media screen and (min-width: 689px) {
+  /* Main page sections */
   .option__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -371,39 +372,35 @@
   .restaurants a {
     width: 47vw;
   }
-  /* body
-    {
-        font-size: 1.2rem;
-        .dishes__wrap
-        {
-            display: flex;
-            .foodCard
-            {
-                width: 20vw;
-            }
-        }
-    } */
-  /* Menu pages responsives
-    .menu
-    {
-        img{
-            height: 375px;
-            object-position: center center;
-        }
-        
-        .palettes
-        {
-            display: flex;
-            justify-content: space-between;
-            /* margin: -1rem; 
-            .dishes
-            {
-                width: 31vw;
-                
-            }
-        }
-        
-    } */
+  /* Menu page section */
+  body {
+    font-size: 1.5rem;
+  }
+  body header img {
+    height: 40px;
+  }
+  body header a {
+    font-size: 2rem;
+  }
+  body .menu img {
+    height: 38vh;
+  }
+  body .menu .menuBoard__name h1 {
+    font-size: 2rem;
+  }
+  body .menu .menuBoard__name i {
+    right: -11vw;
+    font-size: 2rem;
+  }
+  body .menu .menuBoard button {
+    font-size: 20px;
+    width: 25%;
+    bottom: 35%;
+    left: 38%;
+  }
+  body footer .footer__logo img {
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 990px) {
