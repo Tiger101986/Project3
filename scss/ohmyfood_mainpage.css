@@ -161,6 +161,7 @@
 }
 
 .menu .menuBoard__name h1 {
+  font-size: 2rem;
   position: absolute;
   top: 1rem;
   left: 0rem;
@@ -169,6 +170,7 @@
 }
 
 .menu .menuBoard__name i {
+  font-size: 2rem;
   position: absolute;
   top: 1rem;
 }
@@ -373,9 +375,6 @@
     width: 47vw;
   }
   /* Menu page section */
-  body {
-    font-size: 1.5rem;
-  }
   body header img {
     height: 40px;
   }
@@ -456,11 +455,11 @@
     height: 42vh;
   }
   .menu .menuBoard__name h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .menu .menuBoard__name i {
     right: -11vw;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .menu .menuBoard .palettes {
     display: -webkit-box;
