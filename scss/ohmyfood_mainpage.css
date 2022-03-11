@@ -143,7 +143,7 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu .menuBoard {
@@ -151,7 +151,7 @@
   background-color: #e0e0e0;
   border-radius: 3rem 3rem 0px 0px;
   padding: 2rem 1rem;
-  z-index: 1;
+  z-index: 2;
   margin-top: -3rem;
 }
 
@@ -371,6 +371,39 @@
   .restaurants a {
     width: 47vw;
   }
+  /* body
+    {
+        font-size: 1.2rem;
+        .dishes__wrap
+        {
+            display: flex;
+            .foodCard
+            {
+                width: 20vw;
+            }
+        }
+    } */
+  /* Menu pages responsives
+    .menu
+    {
+        img{
+            height: 375px;
+            object-position: center center;
+        }
+        
+        .palettes
+        {
+            display: flex;
+            justify-content: space-between;
+            /* margin: -1rem; 
+            .dishes
+            {
+                width: 31vw;
+                
+            }
+        }
+        
+    } */
 }
 
 @media screen and (min-width: 990px) {
@@ -420,6 +453,34 @@
   }
   .restaurants a {
     width: 23vw;
+  }
+  /* Menu pages responsives */
+  .menu img {
+    height: 42vh;
+  }
+  .menu .menuBoard__name h1 {
+    font-size: 2rem;
+  }
+  .menu .menuBoard__name i {
+    right: -11vw;
+    font-size: 2rem;
+  }
+  .menu .menuBoard .palettes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: -1rem;
+  }
+  .menu .menuBoard .palettes .dishes {
+    width: 31vw;
+  }
+  .menu .menuBoard button {
+    width: 25%;
+    bottom: 35%;
+    left: 38%;
   }
 }
 

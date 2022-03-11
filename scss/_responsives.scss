@@ -44,6 +44,39 @@
             width: 47vw;  
         }  
     }
+    /* body
+    {
+        font-size: 1.2rem;
+        .dishes__wrap
+        {
+            display: flex;
+            .foodCard
+            {
+                width: 20vw;
+            }
+        }
+    } */
+    /* Menu pages responsives
+    .menu
+    {
+        img{
+            height: 375px;
+            object-position: center center;
+        }
+        
+        .palettes
+        {
+            display: flex;
+            justify-content: space-between;
+            /* margin: -1rem; 
+            .dishes
+            {
+                width: 31vw;
+                
+            }
+        }
+        
+    } */    
 }
 @include labtop
 {
@@ -91,5 +124,42 @@
             width: 23vw;  
         }  
     }
-    
+    /* Menu pages responsives */
+    .menu
+    {
+        img{
+            height: 42vh;
+        }
+        .menuBoard
+        {
+            &__name
+            {
+                h1{
+                    font-size: 2rem;
+                }    
+                i{
+                    right: -11vw;
+                    font-size: 2rem;
+                }
+            }
+            .palettes
+            {
+                display: flex;
+                justify-content: space-evenly;
+                margin: -1rem;
+                .dishes
+                {
+                    width: 31vw;                    
+                }
+            }
+            button
+            {                 
+                width: 25%;
+                bottom: 35%;
+                left: 38%;
+            }
+                
+        }
+        
+    }    
 }
