@@ -630,11 +630,6 @@ header a {
 .restaurants {
   background-color: #e0e0e0;
   padding: 1rem;
-  /* &__card--wrap
-  { 
-    width: 100%;     
-    @include flexCenter(column);
-  }   */
 }
 
 .restaurants__heading {
@@ -664,6 +659,7 @@ header a {
 
 .restaurants__text {
   margin: 1rem;
+  line-height: 1.3;
 }
 
 .restaurants__text p {

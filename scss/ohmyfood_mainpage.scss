@@ -193,11 +193,7 @@ header
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  /* &__card--wrap
-  { 
-    width: 100%;     
-    @include flexCenter(column);
-  }   */
+  
   &__card
   {
     background-color: #ffffff;
@@ -222,6 +218,7 @@ header
   &__text
   {
     margin: 1rem ;
+    line-height: 1.3;
     p
     {
       font-size: 14px;
