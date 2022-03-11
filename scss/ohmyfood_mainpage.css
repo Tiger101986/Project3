@@ -474,6 +474,9 @@
   .menu .menuBoard .palettes .dishes {
     width: 31vw;
   }
+  .menu .menuBoard .palettes .mt-dish {
+    margin-top: 0;
+  }
   .menu .menuBoard button {
     width: 25%;
     bottom: 35%;
