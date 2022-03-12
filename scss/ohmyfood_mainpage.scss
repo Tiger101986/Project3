@@ -130,7 +130,6 @@ header
   }
   &__wrap
   {
-     @include flexCenter(column);
     :hover
     {
       background-color: lighten($primary-color, 32);

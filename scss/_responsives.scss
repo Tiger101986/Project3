@@ -6,27 +6,19 @@
         &__wrap
         {
             display: flex;
-            flex-flow: row wrap;
-            
+            flex-direction: column;
+            margin-bottom: -2rem;
             .option__btn--tbl-1
             {
-                width: 45%;
-                align-items: center;
-                border-radius: 1rem;
-                margin-right: 2rem;
+                @include tablet__btn;
             }
             .option__btn--tbl-2
             {
-                width: 45%;
-                align-items: center;
-                border-radius: 1rem;
-                margin-right: 2rem;
+                @include tablet__btn;
             }
             .option__btn--tbl-3
             {
-                width: 45%;
-                align-items: center;
-                border-radius: 1rem;
+                @include tablet__btn;
             }
         }
     }
@@ -101,7 +93,8 @@
         &__wrap
         {
             display: flex;
-            flex-flow: row wrap;
+            flex-direction: row;
+            margin-bottom: 2rem;
             
             .option__btn--tbl-1
             {

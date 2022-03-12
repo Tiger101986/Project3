@@ -28,7 +28,7 @@
         position: absolute;
         top: 1rem;
         left: 0rem;
-        font-family: Shrikhand;
+        font-family: Shrikhand, cursive;
         font-style: italic;
       }
       i
@@ -63,11 +63,12 @@
           overflow: hidden;
           &__text
           {
+            
             margin-left: 1rem;
             flex: none;
             width: 75%;
             transition: width 1000ms ease-in;
-          h4
+          h3
           {
             margin: 1rem 0 0.5rem;
           }
