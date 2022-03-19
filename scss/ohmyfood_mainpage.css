@@ -1,3 +1,4 @@
+/* using single quotation does not need to add dot (.) and forward slash (/) as double quotation mark  */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -161,7 +162,7 @@
 }
 
 .menu .menuBoard__name h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 1rem;
   left: 0rem;
@@ -170,9 +171,10 @@
 }
 
 .menu .menuBoard__name i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 1rem;
+  right: -3rem;
 }
 
 .menu .menuBoard .dishes {
@@ -276,12 +278,14 @@
 }
 
 .menu .menuBoard .dishes__wrap .foodCard:hover .foodCard__description {
+  /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .menu .menuBoard .dishes__wrap .foodCard:hover .checkmarks {
+  /* animation: animation-name -duration -timing-function -fill-mode */
   -webkit-animation: spin 1500ms linear forwards;
           animation: spin 1500ms linear forwards;
 }
@@ -333,7 +337,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: -2rem;
+    /* margin-bottom: -2rem; */
   }
   .option__wrap .option__btn--tbl-1 {
     width: 50%;
@@ -537,14 +541,16 @@ body {
 
 header {
   position: relative;
-  margin: 12px 0px 8px;
   display: block;
   margin: .5rem;
   text-align: center;
-}
-
-header img {
-  height: 23px;
+  /*
+    no need this selector here
+    img
+    {
+      height: 23px;
+    } */
+  /* margin: 12px 0px 8px; unusing this one need to take off*/
 }
 
 header img {
@@ -559,7 +565,7 @@ header a {
   left: 1rem;
 }
 
-/* note: please create a neww class for icon insteat of style icon directly in header cause it affects to header in main page */
+/* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */
 .aside {
   width: 100%;
   background-color: #e0e0e0;
@@ -613,15 +619,10 @@ header a {
 }
 
 .option {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* unneeded these flex properties 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap; */
   margin-top: 35px;
   padding: 1rem .5rem 1rem 1.5rem;
 }

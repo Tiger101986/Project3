@@ -26,10 +26,12 @@ $txt_color: #ffffff;
     display: block;
     margin: .5rem;
     text-align: center;
+    /*
+    no need this selector here
     img
     {
       height: 23px;
-    }
+    } */
 }
 @mixin btn__lin--gradient
 {

@@ -24,7 +24,7 @@
       margin-bottom: 5rem;
       h1
       {
-        font-size: 2rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 1rem;
         left: 0rem;
@@ -33,9 +33,10 @@
       }
       i
       {
-        font-size: 2rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 1rem;
+        right: -3rem;
       }
     }
     .dishes
@@ -115,12 +116,14 @@
           }
           .foodCard__description
           {
+            /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
           }
           .checkmarks
           {
+            /* animation: animation-name -duration -timing-function -fill-mode */
             animation: spin 1500ms linear forwards;
           }
 

@@ -1,5 +1,6 @@
+/* using single quotation does not need to add dot (.) and forward slash (/) as double quotation mark  */
 @import "./variable";
-@import 'menupages';
+@import 'menupages'; 
 @import 'responsives';
 
 
@@ -50,12 +51,12 @@ body
 header
 {
   position: relative;
-  margin: 12px 0px 8px;
   @include header-logo;
+  /* margin: 12px 0px 8px; unusing this one need to take off*/
   img
     {
       height: 25px;
-    }
+    } 
  
   a
   {
@@ -66,7 +67,7 @@ header
     left: 1rem;
   }
 }  
-/* note: please create a neww class for icon insteat of style icon directly in header cause it affects to header in main page */  
+/* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */  
   
   
 
@@ -119,9 +120,10 @@ header
 
 .option
 {
+  /* unneeded these flex properties 
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin-top: 35px;
   padding: 1rem .5rem 1rem 1.5rem;
   &__heading
