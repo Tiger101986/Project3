@@ -667,14 +667,14 @@ header a {
   background-color: #9356dc;
   color: #ffffff;
   border-radius: 50%;
-  margin: 0px 20px 0px -11px;
+  margin: 0px 12px 0px -11px;
   padding: 5px;
 }
 
 .option__wrap button i {
   font-size: 20px;
   color: #808080;
-  margin-right: 19px;
+  margin-right: 12px;
 }
 
 .option__wrap button span {
