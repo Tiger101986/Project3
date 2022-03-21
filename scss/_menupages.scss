@@ -86,8 +86,10 @@
             width: 25%;
             flex: none;
             display: flex;
+            justify-content: end; //added
             align-items: end;
             padding-bottom: 1rem;
+            padding-right: 3rem; //added
           }
           &__checkmark
           {
