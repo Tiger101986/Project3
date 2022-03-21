@@ -498,6 +498,7 @@
     position: relative;
     line-height: 1;
     overflow-x: hidden;
+    min-width: 315px;
   }
   .loader {
     position: fixed;
