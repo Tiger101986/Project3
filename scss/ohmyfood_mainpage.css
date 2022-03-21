@@ -492,7 +492,7 @@
 }
 
 /* Header Section */
-@media screen and (min-width: 315px) {
+@media screen and (min-width: 50px) {
   body {
     font-family: Roboto, sans-serif;
     position: relative;
