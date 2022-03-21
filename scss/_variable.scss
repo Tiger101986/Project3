@@ -79,7 +79,7 @@ $txt_color: #ffffff;
 
 @mixin mobole
 {
-  @media screen and (min-width: 320px)
+  @media screen and (min-width: 315px)
   {
     @content;
   }  
