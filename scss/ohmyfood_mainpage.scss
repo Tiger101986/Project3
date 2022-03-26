@@ -5,316 +5,316 @@
 
 
 /* Header Section */
-@include mobile{
-  body
-  {             
-    font-family: Roboto, sans-serif;
-    position: relative;
-    line-height: 1;
-    overflow-x: hidden;
-    min-width: 315px;
-  }
-  .loader
+
+body
+{             
+  font-family: Roboto, sans-serif;
+  position: relative;
+  line-height: 1;
+  /* overflow-x: hidden; */
+  min-width: 315px;
+}
+.loader
+{
+  position: fixed;
+  z-index: 100;
+  animation: disappear 3s forwards;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .spinner
   {
-    position: fixed;
-    z-index: 100;
-    animation: disappear 3s forwards;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .spinner
-    {
-      position: relative;
+    position: relative;
+    height: 30%;
+    width: 30%;
+    animation: spin 3s forwards;
+    &__circle{
       height: 30%;
       width: 30%;
-      animation: spin 3s forwards;
-      &__circle{
-        height: 30%;
-        width: 30%;
-        border: 5px solid $tertiary-color;
-        border-top: transparent;
-        border-bottom: transparent;
-        border-right: transparent;
-        border-radius: 50%;
-      }
-    }
-    p{
-        
-      position: fixed;
-      top: 50%;
-      right: 50%;
+      border: 5px solid $tertiary-color;
+      border-top: transparent;
+      border-bottom: transparent;
+      border-right: transparent;
+      border-radius: 50%;
     }
   }
-    
-  header
-  {
-    position: relative;
-    @include header-logo;
-    /* margin: 12px 0px 8px; unusing this one need to take off*/
-    img
-      {
-        height: 25px;
-      } 
+  p{
+      
+    position: fixed;
+    top: 50%;
+    right: 50%;
+  }
+}
   
-    a
+header
+{
+  position: relative;
+  @include header-logo;
+  /* margin: 12px 0px 8px; unusing this one need to take off*/
+  img
     {
-      font-size: 1.3rem;
-      color: #000000;
-      position: absolute;
-      top:.2rem;
-      left: 1rem;
-    }
-  }  
-  /* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */  
-    
-    
+      height: 25px;
+    } 
 
-  .aside
+  a
   {
-    width: 100%;
-    background-color: lighten($bg-color, 10);
-    text-align: center;
-    line-height: 2;
-    
+    font-size: 1.3rem;
+    color: #000000;
+    position: absolute;
+    top:.2rem;
+    left: 1rem;
+  }
+}  
+/* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */  
+  
+  
 
-    &__info
+.aside
+{
+  width: 100%;
+  background-color: lighten($bg-color, 10);
+  text-align: center;
+  line-height: 2;
+  
+
+  &__info
+  {
+    display:inline-block;
+    background-color: lighten($bg-color, 3);
+    width: 100%;
+    i 
     {
-      display:inline-block;
-      background-color: lighten($bg-color, 3);
-      width: 100%;
+      font-size: 15px;
+      margin-right: 7px;
+    }
+    span{
+      font-size: 14px;
+    }
+
+  }
+  h1
+  {
+    margin: 15px 0px;
+    font-size: 23px;
+  }
+  p
+  {
+    display: inline-block;
+    color: grey;
+    line-height: 1;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 200;
+    padding: 0px 20px;
+  }
+  button
+  {
+    width: 200px;
+    @include btn__lin--gradient;
+    cursor: pointer;  
+    box-shadow: 5px 5px 5px $bg-color;
+  }
+} 
+
+.option
+{
+  /* unneeded these flex properties 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  margin-top: 35px;
+  padding: 1rem .5rem 1rem 1.5rem;
+  &__heading
+  {
+    margin-bottom: 20px;
+  }
+  &__wrap
+  {
+    :hover
+    {
+      background-color: lighten($primary-color, 32);
+      box-shadow: 5px 5px 5px $bg-color;
+      z-index: 3;
+      opacity: 3;
       i 
       {
-        font-size: 15px;
-        margin-right: 7px;
-      }
-      span{
-        font-size: 14px;
+        color: $primary-color; 
       }
 
     }
-    h1
-    {
-      margin: 15px 0px;
-      font-size: 23px;
-    }
-    p
-    {
-      display: inline-block;
-      color: grey;
-      line-height: 1;
-      font-size: 17px;
-      margin-bottom: 20px;
-      font-weight: 200;
-      padding: 0px 20px;
-    }
+
     button
     {
-      width: 200px;
-      @include btn__lin--gradient;
-      cursor: pointer;  
-      box-shadow: 5px 5px 5px $bg-color;
-    }
-  } 
-
-  .option
-  {
-    /* unneeded these flex properties 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-    margin-top: 35px;
-    padding: 1rem .5rem 1rem 1.5rem;
-    &__heading
-    {
-      margin-bottom: 20px;
-    }
-    &__wrap
-    {
-      :hover
-      {
-        background-color: lighten($primary-color, 32);
-        box-shadow: 5px 5px 5px $bg-color;
-        z-index: 3;
-        opacity: 3;
-        i 
-        {
-          color: $primary-color; 
-        }
-
-      }
-
-      button
-      {
-        
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-color: lighten($bg-color, 10);
-        margin-bottom: 1rem;
-        padding: 1rem 0rem;
-        border: none;
-        border-radius: 1rem;
-        cursor: pointer;
-        .btn__num
-        {
-          display: inline;
-          width: 24px;
-          height: 24px;
-          background-color: $primary-color;
-          color: #ffffff;
-          border-radius: 50%;
-          margin: 0px 12px 0px -11px;
-          padding: 5px ;
-        } 
-        i
-        {
-          font-size: 20px;
-          color:#808080;
-          margin-right: 12px;
-        }
-        span
-        {
-          font-family: sans-serif;
-          font-size: 16px;
-          font-weight: 550;
-        }
-      }
-    }
-  }
-  /* Main Restaurant Sections*/
-  .restaurants
-  {
-    background-color: lighten($bg-color, 10);
-    padding: 1rem;
-    
-    &__heading
-    {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-    
-    &__card
-    {
-      background-color: #ffffff;
-      color: #000000;
-      border-radius: 20px;
-      position: relative;
-      display: inline-block;
+      
+      display: flex;
+      flex-direction: row;
       width: 100%;
+      background-color: lighten($bg-color, 10);
       margin-bottom: 1rem;
-      text-decoration: none;
-      box-shadow: 5px 5px 5px $bg-color;
+      padding: 1rem 0rem;
+      border: none;
+      border-radius: 1rem;
       cursor: pointer;
-        
-      img
-      {
-        width: 100%;
-        height: 150px;
-        border-radius: 20px 20px 0px 0px;
-      }    
-    }
-
-    &__text
-    {
-      margin: 1rem ;
-      line-height: 1.3;
-      p
-      {
-        font-size: 14px;
-      }
-    }
-    &__new 
-    {
-      display: inline-block;
-      outline: none;
-      background-color: $tertiary-color;
-      color: green;
-      position: absolute;  
-      top: 8%;
-      right: 5%;
-      padding: 5px 25px;
-      margin: 0;
-    }
-    
-    &__hearts
-    {
-      position: absolute;
-      display: inline-block;
-      font-size: 1.5rem;
-      bottom: 21%;
-      right: 15%;
-      &--hover
-      {
-        position: absolute;
-        opacity: 0%;
-        background: linear-gradient($secondary-color, $primary-color);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: opacity 3000ms; 
-      }  
-      &--nohover
-      {
-        position: absolute;
-        opacity: 100%; 
-        transition: opacity 3000ms;
-      }
-    }   
-    
-    &__hearts:hover
-    {
-      .restaurants__hearts--hover
-      {
-        opacity: 100%;
-        background: linear-gradient($secondary-color, $primary-color);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: $primary-color;
-        -webkit-text-fill-color: transparent;
-        background-color: $secondary-color;
-        transition: opacity 3000ms;
-        
-      }
-      .restaurants__hearts--nohover
-      {
-        opacity: 0%;
-        transition: opacity 3000ms;
-      }
-    }
-  }
-  /* Footer section */
-  footer
-  {
-    background-color: #000000;
-    padding: 1rem;
-    line-height: 1.5;
-
-    .footer__logo
-    {
-      display: block;
-      font-family: Shrikhand;
-      margin: 10px 0px;
-
-      img
-      {
-        height: 20px;
-        filter: invert(100%); /* changing img-color by using filter propert to invert color from black to white.  */  
-      }
-    } 
-    
-    a
-    {
-      display: block;
-      text-decoration: none;
-      color:#ffffff;
-      i
+      .btn__num
       {
         display: inline;
-        margin-right: .2rem;
+        width: 24px;
+        height: 24px;
+        background-color: $primary-color;
+        color: #ffffff;
+        border-radius: 50%;
+        margin: 0px 12px 0px -11px;
+        padding: 5px ;
+      } 
+      i
+      {
+        font-size: 20px;
+        color:#808080;
+        margin-right: 12px;
+      }
+      span
+      {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 550;
       }
     }
   }
 }
+/* Main Restaurant Sections*/
+.restaurants
+{
+  background-color: lighten($bg-color, 10);
+  padding: 1rem;
+  
+  &__heading
+  {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__card
+  {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px $bg-color;
+    cursor: pointer;
+      
+    img
+    {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0px 0px;
+    }    
+  }
+
+  &__text
+  {
+    margin: 1rem ;
+    line-height: 1.3;
+    p
+    {
+      font-size: 14px;
+    }
+  }
+  &__new 
+  {
+    display: inline-block;
+    outline: none;
+    background-color: $tertiary-color;
+    color: green;
+    position: absolute;  
+    top: 8%;
+    right: 5%;
+    padding: 5px 25px;
+    margin: 0;
+  }
+  
+  &__hearts
+  {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    bottom: 21%;
+    right: 15%;
+    &--hover
+    {
+      position: absolute;
+      opacity: 0%;
+      background: linear-gradient($secondary-color, $primary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: opacity 3000ms; 
+    }  
+    &--nohover
+    {
+      position: absolute;
+      opacity: 100%; 
+      transition: opacity 3000ms;
+    }
+  }   
+  
+  &__hearts:hover
+  {
+    .restaurants__hearts--hover
+    {
+      opacity: 100%;
+      background: linear-gradient($secondary-color, $primary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: $primary-color;
+      -webkit-text-fill-color: transparent;
+      background-color: $secondary-color;
+      transition: opacity 3000ms;
+      
+    }
+    .restaurants__hearts--nohover
+    {
+      opacity: 0%;
+      transition: opacity 3000ms;
+    }
+  }
+}
+/* Footer section */
+footer
+{
+  background-color: #000000;
+  padding: 1rem;
+  line-height: 1.5;
+
+  .footer__logo
+  {
+    display: block;
+    font-family: Shrikhand;
+    margin: 10px 0px;
+
+    img
+    {
+      height: 20px;
+      filter: invert(100%); /* changing img-color by using filter propert to invert color from black to white.  */  
+    }
+  } 
+  
+  a
+  {
+    display: block;
+    text-decoration: none;
+    color:#ffffff;
+    i
+    {
+      display: inline;
+      margin-right: .2rem;
+    }
+  }
+}
+

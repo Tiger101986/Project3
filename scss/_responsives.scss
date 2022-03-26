@@ -24,6 +24,7 @@
     }
     .restaurants
     {
+        overflow-x: hidden;
         &__card--wrap
         { 
           display: flex;
@@ -40,6 +41,7 @@
     /* Menu page section */
     body
     {
+        
         header
         {
             img{
@@ -120,7 +122,7 @@
     }
     .restaurants
     {
-        
+        overflow-x: hidden;
         &__card--wrap
         { 
           display: flex;
@@ -134,46 +136,49 @@
         }  
     }
     /* Menu pages responsives */
-    .menu
+    body
     {
-        img{
-            height: 42vh;
-        }
-        .menuBoard
-        {
-            &__name
-            {
-                h1{
-                    font-size: 3rem;
-                }    
-                i{
-                    right: -11vw;
-                    font-size: 3rem;
-                }
-            }
-            .palettes
-            {
-                display: flex;
-                justify-content: space-evenly;
-                margin: -1rem;
-                .dishes
-                {
-                    width: 31vw;                    
-                }
-                .mt-dish
-                    {
-                        margin-top: 0;
-                    }
-
-            }
-            button
-            {                 
-                width: 25%;
-                bottom: 35%;
-                left: 38%;
-            }
-                
-        }
         
+        .menu
+        {
+            img{
+                height: 42vh;
+            }
+            .menuBoard
+            {
+                &__name
+                {
+                    h1{
+                        font-size: 3rem;
+                    }    
+                    i{
+                        right: -11vw;
+                        font-size: 3rem;
+                    }
+                }
+                .palettes
+                {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin: -1rem;
+                    .dishes
+                    {
+                        width: 31vw;                    
+                    }
+                    .mt-dish
+                        {
+                            margin-top: 0;
+                        }
+
+                }
+                button
+                {                 
+                    width: 25%;
+                    bottom: 35%;
+                    left: 38%;
+                }
+                    
+            }
+        }
     }    
 }

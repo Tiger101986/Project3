@@ -1,168 +1,165 @@
 /* All Sections of Each Restaurant */
-@include mobile
-{
-  .menu
-  {
-    @include flexCenter(column);
-    img
-    {
-      width: 100vw;
-      height: 250px;
-      object-fit: cover;
-      z-index: 1;
-      min-width: 315px;
-    }
-    .menuBoard
-    { 
-      width: 100vw;
-      background-color: lighten($bg-color, 10);
-      border-radius: 3rem 3rem 0px 0px ;
-      padding: 2rem 1rem;
-      z-index: 2;
-      margin-top: -3rem;
-      min-width: 315px;
-      &__name
-      {
-        position: relative;
-        margin-bottom: 5rem;
-        h1
-        {
-          font-size: 1.5rem;
-          position: absolute;
-          top: 1rem;
-          left: 0rem;
-          font-family: Shrikhand, cursive;
-          font-style: italic;
-        }
-        i
-        {
-          font-size: 1.5rem;
-          position: absolute;
-          top: 1rem;
-          right: -3rem;
-        }
-      }
-      .dishes
-      {
-        margin: auto; 
-        
-        &__partial
-        {
-          @include border-bottom;
-          white-space: nowrap;
-        }
-        &__wrap
-        {
-          display: flex;
-          flex-direction: column;
-          
-          .foodCard
-          {         
-            background-color: $txt_color;  
-            margin-bottom: 1rem;
-            width: 100%;
-            border-radius: 1rem;
-            position: relative;
-            display: flex;
-            overflow: hidden;
-            &__text
-            {
-              
-              margin-left: 1rem;
-              flex: none;
-              width: 75%;
-              transition: width 1000ms ease-in;
-            h3
-            {
-              margin: 1rem 0 0.5rem;
-            }
-              .foodCard__description
-              {
-                margin: 0.5rem 0 1rem;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-              }
-            }
-            &__price
-            {
-              width: 25%;
-              flex: none;
-              display: flex;
-              justify-content: end; //added
-              align-items: end;
-              padding-bottom: 1rem;
-              padding-right: 2rem; //added
-            }
-            &__checkmark
-            {
-              background-color: $tertiary-color;
-              width: 25%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex: none;
-              .checkmarks
-              {
-                font-size: 1.5rem;
-                color: #fff;
-                margin-left: -1rem;
-                animation: backspin 1500ms linear forwards;
-              }
-            }
 
-          }
-          .foodCard:hover
+.menu
+{
+  @include flexCenter(column);
+  img
+  {
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+    z-index: 1;
+    min-width: 315px;
+  }
+  .menuBoard
+  { 
+    width: 100vw;
+    background-color: lighten($bg-color, 10);
+    border-radius: 3rem 3rem 0px 0px ;
+    padding: 2rem 1rem;
+    z-index: 2;
+    margin-top: -3rem;
+    min-width: 315px;
+    &__name
+    {
+      position: relative;
+      margin-bottom: 5rem;
+      h1
+      {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        left: 0rem;
+        font-family: Shrikhand, cursive;
+        font-style: italic;
+      }
+      i
+      {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        right: -3rem;
+      }
+    }
+    .dishes
+    {
+      margin: auto; 
+      
+      &__partial
+      {
+        @include border-bottom;
+        white-space: nowrap;
+      }
+      &__wrap
+      {
+        display: flex;
+        flex-direction: column;
+        
+        .foodCard
+        {         
+          background-color: $txt_color;  
+          margin-bottom: 1rem;
+          width: 100%;
+          border-radius: 1rem;
+          position: relative;
+          display: flex;
+          overflow: hidden;
+          &__text
           {
-            .foodCard__text
-            {
-              width: 50%;
-              transition: width 1000ms ease-in;
-            }
+            
+            margin-left: 1rem;
+            flex: none;
+            width: 75%;
+            transition: width 1000ms ease-in;
+          h3
+          {
+            margin: 1rem 0 0.5rem;
+          }
             .foodCard__description
             {
-              /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
+              margin: 0.5rem 0 1rem;
               text-overflow: ellipsis;
               overflow: hidden;
               white-space: nowrap;
             }
+          }
+          &__price
+          {
+            width: 25%;
+            flex: none;
+            display: flex;
+            justify-content: end; //added
+            align-items: end;
+            padding-bottom: 1rem;
+            padding-right: 2rem; //added
+          }
+          &__checkmark
+          {
+            background-color: $tertiary-color;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
             .checkmarks
             {
-              /* animation: animation-name -duration -timing-function -fill-mode */
-              animation: spin 1500ms linear forwards;
+              font-size: 1.5rem;
+              color: #fff;
+              margin-left: -1rem;
+              animation: backspin 1500ms linear forwards;
             }
+          }
 
-          }  
         }
+        .foodCard:hover
+        {
+          .foodCard__text
+          {
+            width: 50%;
+            transition: width 1000ms ease-in;
+          }
+          .foodCard__description
+          {
+            /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+          .checkmarks
+          {
+            /* animation: animation-name -duration -timing-function -fill-mode */
+            animation: spin 1500ms linear forwards;
+          }
 
+        }  
       }
-      .dishes__anim--1
-      {
-          animation: dishes 1000ms ;
-      }
-      .dishes__anim--2
-      {
-          animation: dishes 1250ms ;
-      }
-      .dishes__anim--3
-      {
-          animation: dishes 1500ms ;
-      }
-      .dishes__anim--4
-      {
-          animation: dishes 1750ms ;
-      }
-      button
-      {
-        font-size: 16px;
-        width: 50%;
-        @include btn__lin--gradient;
-        position: relative;
-        bottom: 25%;
-        left: 25%;
-        margin-top: 2rem;
-      }  
+
     }
-    
-  }
-}  
+    .dishes__anim--1
+    {
+        animation: dishes 1000ms ;
+    }
+    .dishes__anim--2
+    {
+        animation: dishes 1250ms ;
+    }
+    .dishes__anim--3
+    {
+        animation: dishes 1500ms ;
+    }
+    .dishes__anim--4
+    {
+        animation: dishes 1750ms ;
+    }
+    button
+    {
+      font-size: 16px;
+      width: 50%;
+      @include btn__lin--gradient;
+      position: relative;
+      bottom: 25%;
+      left: 25%;
+      margin-top: 2rem;
+    }  
+  }    
+}

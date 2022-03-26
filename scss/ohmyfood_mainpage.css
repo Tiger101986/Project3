@@ -123,193 +123,214 @@
 }
 
 /* All Sections of Each Restaurant */
-@media screen and (min-width: 50px) {
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu img {
-    width: 100vw;
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    z-index: 1;
-    min-width: 315px;
-  }
-  .menu .menuBoard {
-    width: 100vw;
-    background-color: #e0e0e0;
-    border-radius: 3rem 3rem 0px 0px;
-    padding: 2rem 1rem;
-    z-index: 2;
-    margin-top: -3rem;
-    min-width: 315px;
-  }
-  .menu .menuBoard__name {
-    position: relative;
-    margin-bottom: 5rem;
-  }
-  .menu .menuBoard__name h1 {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    left: 0rem;
-    font-family: Shrikhand, cursive;
-    font-style: italic;
-  }
-  .menu .menuBoard__name i {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    right: -3rem;
-  }
-  .menu .menuBoard .dishes {
-    margin: auto;
-  }
-  .menu .menuBoard .dishes__partial {
-    width: 40px;
-    border-bottom: 3px solid #99e2d0;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    white-space: nowrap;
-  }
-  .menu .menuBoard .dishes__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard {
-    background-color: #ffffff;
-    margin-bottom: 1rem;
-    width: 100%;
-    border-radius: 1rem;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__text {
-    margin-left: 1rem;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    width: 75%;
-    -webkit-transition: width 1000ms ease-in;
-    transition: width 1000ms ease-in;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__text h3 {
-    margin: 1rem 0 0.5rem;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__text .foodCard__description {
-    margin: 0.5rem 0 1rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__price {
-    width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__checkmark {
-    background-color: #99e2d0;
-    width: 25%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard__checkmark .checkmarks {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-left: -1rem;
-    -webkit-animation: backspin 1500ms linear forwards;
-            animation: backspin 1500ms linear forwards;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard:hover .foodCard__text {
-    width: 50%;
-    -webkit-transition: width 1000ms ease-in;
-    transition: width 1000ms ease-in;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard:hover .foodCard__description {
-    /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .menu .menuBoard .dishes__wrap .foodCard:hover .checkmarks {
-    /* animation: animation-name -duration -timing-function -fill-mode */
-    -webkit-animation: spin 1500ms linear forwards;
-            animation: spin 1500ms linear forwards;
-  }
-  .menu .menuBoard .dishes__anim--1 {
-    -webkit-animation: dishes 1000ms;
-            animation: dishes 1000ms;
-  }
-  .menu .menuBoard .dishes__anim--2 {
-    -webkit-animation: dishes 1250ms;
-            animation: dishes 1250ms;
-  }
-  .menu .menuBoard .dishes__anim--3 {
-    -webkit-animation: dishes 1500ms;
-            animation: dishes 1500ms;
-  }
-  .menu .menuBoard .dishes__anim--4 {
-    -webkit-animation: dishes 1750ms;
-            animation: dishes 1750ms;
-  }
-  .menu .menuBoard button {
-    font-size: 16px;
-    width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    /* create linear-gradient into background [ linear-gradient(top-color, bottom-color)] */
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    bottom: 25%;
-    left: 25%;
-    margin-top: 2rem;
-  }
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu img {
+  width: 100vw;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  min-width: 315px;
+}
+
+.menu .menuBoard {
+  width: 100vw;
+  background-color: #e0e0e0;
+  border-radius: 3rem 3rem 0px 0px;
+  padding: 2rem 1rem;
+  z-index: 2;
+  margin-top: -3rem;
+  min-width: 315px;
+}
+
+.menu .menuBoard__name {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.menu .menuBoard__name h1 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  font-family: Shrikhand, cursive;
+  font-style: italic;
+}
+
+.menu .menuBoard__name i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: -3rem;
+}
+
+.menu .menuBoard .dishes {
+  margin: auto;
+}
+
+.menu .menuBoard .dishes__partial {
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+.menu .menuBoard .dishes__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__text {
+  margin-left: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 75%;
+  -webkit-transition: width 1000ms ease-in;
+  transition: width 1000ms ease-in;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__text h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__text .foodCard__description {
+  margin: 0.5rem 0 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__price {
+  width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__checkmark {
+  background-color: #99e2d0;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard__checkmark .checkmarks {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: -1rem;
+  -webkit-animation: backspin 1500ms linear forwards;
+          animation: backspin 1500ms linear forwards;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard:hover .foodCard__text {
+  width: 50%;
+  -webkit-transition: width 1000ms ease-in;
+  transition: width 1000ms ease-in;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard:hover .foodCard__description {
+  /* NOTE: when we use text-overflow property, overflow and white-space properties are required */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu .menuBoard .dishes__wrap .foodCard:hover .checkmarks {
+  /* animation: animation-name -duration -timing-function -fill-mode */
+  -webkit-animation: spin 1500ms linear forwards;
+          animation: spin 1500ms linear forwards;
+}
+
+.menu .menuBoard .dishes__anim--1 {
+  -webkit-animation: dishes 1000ms;
+          animation: dishes 1000ms;
+}
+
+.menu .menuBoard .dishes__anim--2 {
+  -webkit-animation: dishes 1250ms;
+          animation: dishes 1250ms;
+}
+
+.menu .menuBoard .dishes__anim--3 {
+  -webkit-animation: dishes 1500ms;
+          animation: dishes 1500ms;
+}
+
+.menu .menuBoard .dishes__anim--4 {
+  -webkit-animation: dishes 1750ms;
+          animation: dishes 1750ms;
+}
+
+.menu .menuBoard button {
+  font-size: 16px;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  /* create linear-gradient into background [ linear-gradient(top-color, bottom-color)] */
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 25%;
+  left: 25%;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 689px) {
@@ -363,6 +384,9 @@
     width: 47vw;
   }
   /* Menu page section */
+  body {
+    overflow-x: hidden;
+  }
   body header img {
     height: 40px;
   }
@@ -440,17 +464,20 @@
     width: 23vw;
   }
   /* Menu pages responsives */
-  .menu img {
+  body {
+    overflow-x: hidden;
+  }
+  body .menu img {
     height: 42vh;
   }
-  .menu .menuBoard__name h1 {
+  body .menu .menuBoard__name h1 {
     font-size: 3rem;
   }
-  .menu .menuBoard__name i {
+  body .menu .menuBoard__name i {
     right: -11vw;
     font-size: 3rem;
   }
-  .menu .menuBoard .palettes {
+  body .menu .menuBoard .palettes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -459,13 +486,13 @@
             justify-content: space-evenly;
     margin: -1rem;
   }
-  .menu .menuBoard .palettes .dishes {
+  body .menu .menuBoard .palettes .dishes {
     width: 31vw;
   }
-  .menu .menuBoard .palettes .mt-dish {
+  body .menu .menuBoard .palettes .mt-dish {
     margin-top: 0;
   }
-  .menu .menuBoard button {
+  body .menu .menuBoard button {
     width: 25%;
     bottom: 35%;
     left: 38%;
@@ -473,290 +500,327 @@
 }
 
 /* Header Section */
-@media screen and (min-width: 50px) {
-  body {
-    font-family: Roboto, sans-serif;
-    position: relative;
-    line-height: 1;
-    overflow-x: hidden;
-    min-width: 315px;
-  }
-  .loader {
-    position: fixed;
-    z-index: 100;
-    -webkit-animation: disappear 3s forwards;
-            animation: disappear 3s forwards;
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .loader .spinner {
-    position: relative;
-    height: 30%;
-    width: 30%;
-    -webkit-animation: spin 3s forwards;
-            animation: spin 3s forwards;
-  }
-  .loader .spinner__circle {
-    height: 30%;
-    width: 30%;
-    border: 5px solid #99e2d0;
-    border-top: transparent;
-    border-bottom: transparent;
-    border-right: transparent;
-    border-radius: 50%;
-  }
-  .loader p {
-    position: fixed;
-    top: 50%;
-    right: 50%;
-  }
-  header {
-    position: relative;
-    display: block;
-    margin: .5rem;
-    text-align: center;
-    /*
+body {
+  font-family: Roboto, sans-serif;
+  position: relative;
+  line-height: 1;
+  /* overflow-x: hidden; */
+  min-width: 315px;
+}
+
+.loader {
+  position: fixed;
+  z-index: 100;
+  -webkit-animation: disappear 3s forwards;
+          animation: disappear 3s forwards;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader .spinner {
+  position: relative;
+  height: 30%;
+  width: 30%;
+  -webkit-animation: spin 3s forwards;
+          animation: spin 3s forwards;
+}
+
+.loader .spinner__circle {
+  height: 30%;
+  width: 30%;
+  border: 5px solid #99e2d0;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  border-radius: 50%;
+}
+
+.loader p {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+}
+
+header {
+  position: relative;
+  display: block;
+  margin: .5rem;
+  text-align: center;
+  /*
     no need this selector here
     img
     {
       height: 23px;
     } */
-    /* margin: 12px 0px 8px; unusing this one need to take off*/
-  }
-  header img {
-    height: 25px;
-  }
-  header a {
-    font-size: 1.3rem;
-    color: #000000;
-    position: absolute;
-    top: .2rem;
-    left: 1rem;
-  }
-  /* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */
-  .aside {
-    width: 100%;
-    background-color: #e0e0e0;
-    text-align: center;
-    line-height: 2;
-  }
-  .aside__info {
-    display: inline-block;
-    background-color: #cecece;
-    width: 100%;
-  }
-  .aside__info i {
-    font-size: 15px;
-    margin-right: 7px;
-  }
-  .aside__info span {
-    font-size: 14px;
-  }
-  .aside h1 {
-    margin: 15px 0px;
-    font-size: 23px;
-  }
-  .aside p {
-    display: inline-block;
-    color: grey;
-    line-height: 1;
-    font-size: 17px;
-    margin-bottom: 20px;
-    font-weight: 200;
-    padding: 0px 20px;
-  }
-  .aside button {
-    width: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    /* create linear-gradient into background [ linear-gradient(top-color, bottom-color)] */
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    -webkit-box-shadow: 5px 5px 5px #c6c6c6;
-            box-shadow: 5px 5px 5px #c6c6c6;
-  }
-  .option {
-    /* unneeded these flex properties 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-    margin-top: 35px;
-    padding: 1rem .5rem 1rem 1.5rem;
-  }
-  .option__heading {
-    margin-bottom: 20px;
-  }
-  .option__wrap :hover {
-    background-color: #e9ddf8;
-    -webkit-box-shadow: 5px 5px 5px #c6c6c6;
-            box-shadow: 5px 5px 5px #c6c6c6;
-    z-index: 3;
-    opacity: 3;
-  }
-  .option__wrap :hover i {
-    color: #9356dc;
-  }
-  .option__wrap button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    background-color: #e0e0e0;
-    margin-bottom: 1rem;
-    padding: 1rem 0rem;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
-  .option__wrap button .btn__num {
-    display: inline;
-    width: 24px;
-    height: 24px;
-    background-color: #9356dc;
-    color: #ffffff;
-    border-radius: 50%;
-    margin: 0px 12px 0px -11px;
-    padding: 5px;
-  }
-  .option__wrap button i {
-    font-size: 20px;
-    color: #808080;
-    margin-right: 12px;
-  }
-  .option__wrap button span {
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 550;
-  }
-  /* Main Restaurant Sections*/
-  .restaurants {
-    background-color: #e0e0e0;
-    padding: 1rem;
-  }
-  .restaurants__heading {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  .restaurants__card {
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 20px;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    -webkit-box-shadow: 5px 5px 5px #c6c6c6;
-            box-shadow: 5px 5px 5px #c6c6c6;
-    cursor: pointer;
-  }
-  .restaurants__card img {
-    width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .restaurants__text {
-    margin: 1rem;
-    line-height: 1.3;
-  }
-  .restaurants__text p {
-    font-size: 14px;
-  }
-  .restaurants__new {
-    display: inline-block;
-    outline: none;
-    background-color: #99e2d0;
-    color: green;
-    position: absolute;
-    top: 8%;
-    right: 5%;
-    padding: 5px 25px;
-    margin: 0;
-  }
-  .restaurants__hearts {
-    position: absolute;
-    display: inline-block;
-    font-size: 1.5rem;
-    bottom: 21%;
-    right: 15%;
-  }
-  .restaurants__hearts--hover {
-    position: absolute;
-    opacity: 0%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-transition: opacity 3000ms;
-    transition: opacity 3000ms;
-  }
-  .restaurants__hearts--nohover {
-    position: absolute;
-    opacity: 100%;
-    -webkit-transition: opacity 3000ms;
-    transition: opacity 3000ms;
-  }
-  .restaurants__hearts:hover .restaurants__hearts--hover {
-    opacity: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: #9356dc;
-    -webkit-text-fill-color: transparent;
-    background-color: #ff79da;
-    -webkit-transition: opacity 3000ms;
-    transition: opacity 3000ms;
-  }
-  .restaurants__hearts:hover .restaurants__hearts--nohover {
-    opacity: 0%;
-    -webkit-transition: opacity 3000ms;
-    transition: opacity 3000ms;
-  }
-  /* Footer section */
-  footer {
-    background-color: #000000;
-    padding: 1rem;
-    line-height: 1.5;
-  }
-  footer .footer__logo {
-    display: block;
-    font-family: Shrikhand;
-    margin: 10px 0px;
-  }
-  footer .footer__logo img {
-    height: 20px;
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
-    /* changing img-color by using filter propert to invert color from black to white.  */
-  }
-  footer a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  footer a i {
-    display: inline;
-    margin-right: .2rem;
-  }
+  /* margin: 12px 0px 8px; unusing this one need to take off*/
+}
+
+header img {
+  height: 25px;
+}
+
+header a {
+  font-size: 1.3rem;
+  color: #000000;
+  position: absolute;
+  top: .2rem;
+  left: 1rem;
+}
+
+/* note: please create a new class for icon insteat of style icon directly in header cause it affects to header in main page */
+.aside {
+  width: 100%;
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 2;
+}
+
+.aside__info {
+  display: inline-block;
+  background-color: #cecece;
+  width: 100%;
+}
+
+.aside__info i {
+  font-size: 15px;
+  margin-right: 7px;
+}
+
+.aside__info span {
+  font-size: 14px;
+}
+
+.aside h1 {
+  margin: 15px 0px;
+  font-size: 23px;
+}
+
+.aside p {
+  display: inline-block;
+  color: grey;
+  line-height: 1;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  padding: 0px 20px;
+}
+
+.aside button {
+  width: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  /* create linear-gradient into background [ linear-gradient(top-color, bottom-color)] */
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
+          box-shadow: 5px 5px 5px #c6c6c6;
+}
+
+.option {
+  /* unneeded these flex properties 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  margin-top: 35px;
+  padding: 1rem .5rem 1rem 1.5rem;
+}
+
+.option__heading {
+  margin-bottom: 20px;
+}
+
+.option__wrap :hover {
+  background-color: #e9ddf8;
+  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
+          box-shadow: 5px 5px 5px #c6c6c6;
+  z-index: 3;
+  opacity: 3;
+}
+
+.option__wrap :hover i {
+  color: #9356dc;
+}
+
+.option__wrap button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: #e0e0e0;
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.option__wrap button .btn__num {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 0px 12px 0px -11px;
+  padding: 5px;
+}
+
+.option__wrap button i {
+  font-size: 20px;
+  color: #808080;
+  margin-right: 12px;
+}
+
+.option__wrap button span {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+/* Main Restaurant Sections*/
+.restaurants {
+  background-color: #e0e0e0;
+  padding: 1rem;
+}
+
+.restaurants__heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.restaurants__card {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
+          box-shadow: 5px 5px 5px #c6c6c6;
+  cursor: pointer;
+}
+
+.restaurants__card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.restaurants__text {
+  margin: 1rem;
+  line-height: 1.3;
+}
+
+.restaurants__text p {
+  font-size: 14px;
+}
+
+.restaurants__new {
+  display: inline-block;
+  outline: none;
+  background-color: #99e2d0;
+  color: green;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  padding: 5px 25px;
+  margin: 0;
+}
+
+.restaurants__hearts {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.5rem;
+  bottom: 21%;
+  right: 15%;
+}
+
+.restaurants__hearts--hover {
+  position: absolute;
+  opacity: 0%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 3000ms;
+  transition: opacity 3000ms;
+}
+
+.restaurants__hearts--nohover {
+  position: absolute;
+  opacity: 100%;
+  -webkit-transition: opacity 3000ms;
+  transition: opacity 3000ms;
+}
+
+.restaurants__hearts:hover .restaurants__hearts--hover {
+  opacity: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #9356dc;
+  -webkit-text-fill-color: transparent;
+  background-color: #ff79da;
+  -webkit-transition: opacity 3000ms;
+  transition: opacity 3000ms;
+}
+
+.restaurants__hearts:hover .restaurants__hearts--nohover {
+  opacity: 0%;
+  -webkit-transition: opacity 3000ms;
+  transition: opacity 3000ms;
+}
+
+/* Footer section */
+footer {
+  background-color: #000000;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+footer .footer__logo {
+  display: block;
+  font-family: Shrikhand;
+  margin: 10px 0px;
+}
+
+footer .footer__logo img {
+  height: 20px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  /* changing img-color by using filter propert to invert color from black to white.  */
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer a i {
+  display: inline;
+  margin-right: .2rem;
 }
 /*# sourceMappingURL=ohmyfood_mainpage.css.map */
